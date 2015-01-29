@@ -43,7 +43,7 @@ gem 'bcrypt',               '3.1.7'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-group :production do
-  gem 'rails_12factor', '0.0.2'
-  gem 'unicorn',        '4.8.3'
-end
+# group :production do
+#   gem 'rails_12factor', '0.0.2'
+#   gem 'unicorn',        '4.8.3'
+# end
