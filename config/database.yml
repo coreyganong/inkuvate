@@ -17,11 +17,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
-   encoding: unicode
-   database: test
-   pool: 5
-   username: testdb
-   password: B1llL14ng
+  encoding: unicode
+  database: test
+  pool: 5
+  username: testdb
+  password: B1llL14ng
 
 production:
   adapter: postgresql
