@@ -5,6 +5,9 @@ class StaticPagesController < ApplicationController
   def help
   end
 
+  def temp
+    render :layout => false
+  end
 
 
 end
