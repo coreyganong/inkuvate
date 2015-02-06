@@ -9,7 +9,7 @@ development:
   encoding: unicode
   database: dev
   pool: 5
-  username: devdb
+  username: postgres
   password: B1llL14ng
 
 # Warning: The database defined as "test" will be erased and

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails inkuvate: development" uuid="dea8e011-b80c-43c4-ab41-956ab99d820d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails inkuvate: test" uuid="ad63be31-115b-41c6-b1fe-6ed532ec37dc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails inkuvate: production" uuid="b2943ea2-72e1-47a2-8f77-be34d3b293a3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
