@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
   def index
-    @users = User.order(:id).paginate(page: params[:page], per_page: 6)
+    @users = User.order(:id).paginate(page: params[:page], per_page: 8)
   end
 
   def new
@@ -38,6 +38,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
+      @user.save
       flash[:success] = "Profile updated"
       redirect_to @user
     else
@@ -48,7 +49,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password,
+    params.require(:user).permit(:name, :email, :expertise, :skills, :experience, :linkedin, :description, :location, :portfolio, :password,
                                  :password_confirmation)
   end
 

@@ -1,10 +1,44 @@
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
+<div class="container">
+  <div class="row profile-row">
+    <div class ="col-md-1">
         <%= gravatar_for @user %>
+    </div>
+    <div class ="col-md-4">
+      <h1>
         <%= @user.name %>
       </h1>
-    </section>
-  </aside>
+    </div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Education: </div>
+    <div class ="col-md-4"><%= @user.education %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Expertise: </div>
+    <div class ="col-md-4"><%= @user.expertise %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Skills: </div>
+    <div class ="col-md-4"><%= @user.skills %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Experience: </div>
+    <div class ="col-md-4"><%= @user.experience %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">LinkedIn: </div>
+    <div class ="col-md-4"><%= @user.linkedin %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Description: </div>
+    <div class ="col-md-4"><%= @user.description %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Location: </div>
+    <div class ="col-md-4"><%= @user.location %></div>
+  </div>
+  <div class="row profile-row">
+    <div class ="bold col-md-1">Portfolio: </div>
+    <div class ="col-md-4"><%= @user.portfolio %></div>
+  </div>
 </div>
