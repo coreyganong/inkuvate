@@ -1,9 +1,9 @@
-<h1>All users</h1>
+<div class ="row">
+  <%= will_paginate %>
+</div>
 
-<%= will_paginate %>
+<%= render @users %>
 
-<ul class="users">
-  <%= render @users %>
-</ul>
-
-<%= will_paginate %>
+<div class ="row">
+  <%= will_paginate %>
+</div>

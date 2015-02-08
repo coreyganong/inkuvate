@@ -70,6 +70,21 @@ p {
 
 }
 
+.navbar-nav {
+  li {
+    a {
+      color: rgb(228, 228, 228) !important;
+    }
+    ul {
+      li {
+        a {
+          color: #8C8C8C !important;
+        }
+      }
+    }
+  }
+}
+
 .tempdiv {
   background: image-url("bg.jpg");
 }
@@ -151,15 +166,6 @@ aside {
   }
 }
 
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
-.gravatar_edit {
-  margin-top: 15px;
-}
-
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -212,4 +218,29 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+.ellipfade {
+  position: relative;
+  height: 6.5em; /* exactly three lines */
+}
+.ellipfade:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.7em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
+.ellipmodule {
+  width: 300px;
+  overflow: hidden;
+}
+
+.gravatar {
+  border-radius: 165px;
+  border: 2px #57BA90 solid;
 }

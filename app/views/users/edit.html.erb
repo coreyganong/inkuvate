@@ -2,6 +2,11 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target=_blank>&nbsp;&nbsp;&nbsp;change</a>
+    </div>
+    <br/>
     <%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages' %>
 
@@ -10,6 +15,30 @@
 
         <%= f.label :email %>
         <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :education %>
+        <%= f.text_field :education, class: 'form-control' %>
+
+        <%= f.label :expertise %>
+        <%= f.text_area :expertise, class: 'form-control' %>
+
+        <%= f.label :skills %>
+        <%= f.text_field :skills, class: 'form-control' %>
+
+        <%= f.label :experience %>
+        <%= f.text_area :experience, class: 'form-control' %>
+
+        <%= f.label :linkedin %>
+        <%= f.text_field :linkedin, class: 'form-control' %>
+
+        <%= f.label :description %>
+        <%= f.text_area :description, class: 'form-control' %>
+
+        <%= f.label :portfolio %>
+        <%= f.text_area :portfolio, class: 'form-control' %>
+
+        <%= f.label :location %>
+        <%= f.text_field :location, class: 'form-control' %>
 
         <%= f.label :password %>
         <%= f.password_field :password, class: 'form-control' %>
@@ -20,9 +49,5 @@
         <%= f.submit "Save changes", class: "btn btn-primary" %>
     <% end %>
 
-    <div class="gravatar_edit">
-      <%= gravatar_for @user %>
-      <a href="http://gravatar.com/emails" target=_blank>change</a>
-    </div>
   </div>
 </div>

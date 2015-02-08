@@ -1,8 +1,9 @@
-<li>
-  <%= gravatar_for user, size: 50 %>
-  <%= link_to user.name, user %>
-  <% if current_user.admin? && !current_user?(user) %>
-      | <%= link_to "delete", user, method: :delete,
-                    data: { confirm: "You sure?" } %>
-  <% end %>
-</li>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= gravatar_for user, size:330 %>
+      <div class="caption">
+        <h3><%= link_to user.name, user %></h3>
+        <p class="ellipmodule ellipfade"><%= user.description %></p>
+      </div>
+    </div>
+</div>
